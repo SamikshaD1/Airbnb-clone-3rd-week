@@ -40,6 +40,6 @@ function searchLocation(event) {
   //window.open(`standerd-search.html?location=${locationToBeSearched}&cheak-in=${cheakIn}&cheak-out=${cheakOut}&guests=${guests}`, "_blank");
    const data ={locationToBeSearched :locationToBeSearched ,cheakIn:cheakIn,cheakOut:cheakOut,guests:guests};
    localStorage.setItem('search-data',JSON.stringify(data));
-   window.location.href ='../standerd-search/index.html';
+   window.location.href ='./standerd-search/index.html';
 };
 
