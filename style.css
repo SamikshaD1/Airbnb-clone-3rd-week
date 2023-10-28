@@ -1,0 +1,241 @@
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+* {
+  font-family: inter;
+}
+.homepage {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1250px;
+  background-color: rgb(241, 240, 240);
+}
+a {
+  text-decoration: none;
+  color: var(--white, #fff);
+}
+
+/* Homepage navbar-section */
+.navbar {
+  display: flex;
+  width: 1000px;
+  padding: 16px 80px 96px 80px;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.AirBnb-nav {
+  display: flex;
+  width: 1000px;
+  justify-content: space-between;
+  align-items: center;
+}
+.AirBnb-search {
+  width: 848px;
+  padding: 8px 8px 8px 32px;
+  border-radius: 1000px;
+  background: var(--white, #fff);
+}
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:1vw;
+}
+.input-container input{
+  background-color:white;
+  color:rgb(151, 140, 140);
+}
+.input-container div {
+  display: flex;
+  flex-direction: column;
+}
+.input {
+  width: 150px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #000;
+}
+.big-card img {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 600px;
+  width: 1000px;
+  padding: 80px;
+}
+
+/* Homepage Hero-section */
+.hero {
+  display: flex;
+  width: 1000px;
+  padding: 16px 80px 96px 80px;
+  flex-direction: column;
+  gap: 96px;
+}
+/* card-section  */
+.cards {
+  display: flex;
+  gap: 1vw;
+}
+.card {
+  /* border: 1px solid #ccc; */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  max-height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+.card-content {
+  display: flex;
+  height: 150px;
+  padding: 0 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  background: #cc2d4a;
+  color: #fff;
+}
+.card-content p {
+  font-size: 13px;
+  font-weight: 400;
+}
+.inspiration2 img {
+  max-width: 500px;
+}
+.inspiration3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.inspiration3 img {
+  width: 800px;
+}
+.inspiration3 h2 {
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 800;
+  max-width: 300px;
+}
+.inspiration3 button {
+  background-color: black;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px 0px rgba(31, 41, 55, 0.08);
+  padding: 16px 24px;
+}
+.inspiration5 {
+  font-family: Inter;
+}
+
+/* footer-section  */
+.pre-footer td {
+  width: 500px;
+  height: 40px;
+  font-weight: 500;
+  color: var(--gray-600, #4b5563);
+}
+.pre-footer th {
+  text-align: start;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.table td a {
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+}
+.table td {
+  width: 500px;
+  height: 24px;
+  color: var(--gray-600, #4b5563);
+  font-family: Inter;
+}
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  width: 1000px;
+  padding: 16px 80px 50px 80px;
+}
+#search-btn:hover{
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 600px){
+  .navbar{
+    width: 600px;
+  }
+  .AirBnb-nav {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .AirBnb-search{
+    width: 500px;
+    }
+  .input-container {
+   width: 500px;
+  }
+  .input{
+    width: 90px;
+  }
+  .big-card img{
+    width: 400px;
+    height: 300px;
+  }
+  .cards{
+    flex-direction: column;
+    align-items: center;
+  }
+  .inspiration1 h2{
+    text-align: center;
+  }
+  .inspiration2 h2{
+    text-align: center;
+  }
+  .inspiration2 div{
+    flex-direction: column;
+    align-items: center;
+  }
+  .inspiration3{
+    flex-direction: column;
+    gap: 24px;
+  }
+  .inspiration3 img{
+    width: 500px;
+  }
+  .inspiration4 img{
+   display: none;
+  }
+  .inspiration5 h2{
+    text-align: center;
+  }
+  .inspiration5 div{
+    flex-direction: column;
+  }
+  table{
+    width: 100%;
+    display: none;
+  }
+  .social-media{
+    flex-direction: column;
+  }
+}
